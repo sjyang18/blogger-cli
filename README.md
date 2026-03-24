@@ -53,8 +53,8 @@ cd blogger-cli
 npm install -g .
 
 # Save the OAuth credentials
-mkdir -p ~/.blogger-cli
-cp ~/Downloads/client_secret_*.json ~/.blogger-cli/client_secret.json
+mkdir -p ~/.blogger
+cp ~/Downloads/client_secret_*.json ~/.blogger/client_secret.json
 
 # Authorize (opens browser)
 blogger-cli auth
@@ -112,7 +112,7 @@ Then Claude Code can publish blog posts when you ask it to.
 ## File Structure
 
 ```
-~/.blogger-cli/
+~/.blogger/
 ├── client_secret.json    # OAuth credentials (from Google Cloud Console)
 ├── token.json            # OAuth token (auto-generated after auth)
 └── settings.json         # Blog ID and other settings
@@ -122,7 +122,7 @@ Then Claude Code can publish blog posts when you ask it to.
 
 | Problem | Fix |
 |---------|-----|
-| "Client secret not found" | Download OAuth JSON from Google Cloud Console → save as `~/.blogger-cli/client_secret.json` |
+| "Client secret not found" | Download OAuth JSON from Google Cloud Console → save as `~/.blogger/client_secret.json` |
 | "Not authenticated" | Run `blogger-cli auth` |
 | "Token expired and refresh failed" | Run `blogger-cli auth` again (refresh tokens expire after ~7 days if app is in testing mode) |
 | "Blog ID not specified" | Run `blogger-cli config --blog-id YOUR_ID` |

@@ -46,5 +46,5 @@ blogger-cli config --blog-id YOUR_BLOG_ID
 - Posts are published as **drafts** by default. Use `--draft false` to publish live.
 - The post title defaults to the first `# Heading` in the markdown file.
 - Markdown is converted to HTML automatically (headings, bold, code blocks, tables, lists).
-- Config and tokens are stored in `~/.blogger-cli/`.
-- Also reads legacy credentials from `~/.blogger/` if present.
+- Config and tokens are stored in `~/.blogger/`.
+- Compatible with the VS Code vscode-blogger extension (shares the same credential directory).
