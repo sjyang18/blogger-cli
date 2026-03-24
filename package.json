@@ -1,0 +1,15 @@
+{
+  "name": "blogger-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to publish Markdown files to Google Blogger. Designed as a Claude Code / Copilot skill.",
+  "type": "module",
+  "bin": {
+    "blogger-cli": "./bin/blogger-cli.js"
+  },
+  "scripts": {
+    "auth": "node src/auth.js",
+    "post": "node src/post.js"
+  },
+  "keywords": ["blogger", "markdown", "cli", "blog", "google"],
+  "license": "MIT"
+}

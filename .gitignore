@@ -1,0 +1,12 @@
+node_modules/
+*.json
+!package.json
+!package-lock.json
+
+# Never commit credentials
+client_secret*.json
+token.json
+googleapis.json
+settings.json
+.blogger/
+.blogger-cli/
